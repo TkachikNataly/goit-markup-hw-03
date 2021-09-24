@@ -252,12 +252,23 @@ margin-right: 30px;
     padding-top: 94px;
 
 }
+.team-list {
+    display: flex;
+}
 
-.team-item {
+.team-item:not(:last-child) {
     background-color: var(--lite-text-color);
+    width: 270px;
+    margin-right: 30px;
+}
+.team-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 .team-title-three {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -318,6 +329,7 @@ margin-right: 30px;
 }
 /*-----------Footer-------------*/
 .footer {
+    padding-top: 60px;
     background-color: var(--section-color);
 }
 .footer-link-adress {
@@ -337,10 +349,19 @@ margin-right: 30px;
 }
 
 .footer-logo {
+    width: 145px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--lite-text-color);
+}
+.footer-list {
+    width: 231px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
