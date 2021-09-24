@@ -25,6 +25,11 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+div {
+    display: block;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -34,6 +39,8 @@ body {
 }
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .link {
 text-decoration: none;
@@ -58,7 +65,6 @@ text-decoration: none;
 /*-----------Header--------------*/
 
 .header-container {
-    height: 80px;
     display: flex;
     align-items: center;
     
@@ -83,6 +89,8 @@ text-decoration: none;
 
 .header-list {
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-item:not(:last-child) {
@@ -106,6 +114,8 @@ text-decoration: none;
     display: flex;
     align-items: center;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .header-item-contact:not(:last-child) {
     margin-right: 50px;
@@ -119,7 +129,10 @@ text-decoration: none;
     color: var(--primary-text-color);
 }
 .section-title-two {
-    font-weight: 500;
+    display: block;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -129,34 +142,32 @@ text-decoration: none;
 /*-----------Main---------------*/
 /*-----------Heroy--------------*/
 
-.section-heroy 
+.section-heroy {
+     background-color: var(--section-color);
+}
 
 .heroy-container {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    background-color: var(--section-color);
-   
-
-    
+    margin: 0 auto;
+    padding: 200px 15px;
 }
+
 .heroy-title {
+    display: block;
     width: 696px;
-    height: 120px;
-    padding-top: 200px;
     padding-bottom: 30px;
-    margin: auto;
+    margin: 0 auto;
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--lite-text-color);
-    text-transform: uppercase;
 }
 .section-heroy-bt {
     display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
     background-color: var(--accent-color);
     font-family: Roboto;
     font-weight: 700;
@@ -167,30 +178,79 @@ text-decoration: none;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--lite-text-color);
-    border: 0;
+    border-radius: 4px;
 }
 
 /*-----------Zest---------------*/
+.zest-container {
+    display: block;
+    text-align: center;
+    padding-top: 94px;
+    margin: 0 auto;
+}
+.section-title-two-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.zest-list {
+    display: flex;
+}
+.zest-item {
+    width: 270px;
+    flex-basis: calc(100% / 4);
+    margin-right: 30px;
+    
+}
 .zest-item-three {
+    text-align: left;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding: 0;
 }
 
 .zest-p {
+    text-align: left;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    padding: 0;
 }
 
 /*------------About--------------*/
+.about-container {
+    display: block;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: 0 auto;
+}
+
+.about-list {
+    display: flex;
+}
+.about-img:not(:last-child) {
+margin-right: 30px;
+}
+
 
 /*------------Our team-------------*/
 .section-team {
     background-color: var(--background-section);
+}
+.team-container {
+    display: block;
+    padding-top: 94px;
+
 }
 
 .team-item {
