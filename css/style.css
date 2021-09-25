@@ -79,9 +79,6 @@ text-decoration: none;
 .header-container {
     display: flex;
     align-items: center;  
-    border-width: 1px;
-    border-style: solid;
-    border-color: #2196F3;  
 }
 .header-nav {
     display: flex;
@@ -212,10 +209,11 @@ text-decoration: none;
 }
 .zest-list {
     display: flex;
+    margin-right: -30px;
 }
 .zest-item {
     width: 270px;
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
     
 }
@@ -294,6 +292,7 @@ margin-right: 30px;
 }
 
 /*------------Portfolio-------------*/
+
 .portfolio-hidden {
     position: absolute;
     width: 1px;
@@ -308,14 +307,15 @@ margin-right: 30px;
 .portfolio-group {
     display: flex;
     justify-content: center;
-    width: 811px;
+    width: 810px;
     padding-bottom: 34px;
     margin: 0 auto;
 
 }
 .portfolio-item:not(:last-child) {
+    width: 370px;
     display: block;
-margin-right: 8px;
+    margin-right: 8px;
 }
 .portfolio-bt {
     display: block;
@@ -351,6 +351,8 @@ margin-right: 8px;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-right: -30px;
 }
 .portfolio-all  {
     flex-basis: calc(100% / 3 - 30px);
