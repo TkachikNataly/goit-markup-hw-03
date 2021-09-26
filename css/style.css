@@ -20,7 +20,6 @@ h6 {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-
 ul {
     margin: 0;
     padding-left: 0;
@@ -31,13 +30,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-div {
-    display: block;
-}
-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--title-secondary-color);
@@ -69,6 +62,10 @@ text-decoration: none;
     padding-left: 15px;
     padding-right: 15px;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /*-----------Header--------------*/
 .header {
     border-bottom-width: 1px;
@@ -89,6 +86,8 @@ text-decoration: none;
 }
 
 .header-logo {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -100,8 +99,6 @@ text-decoration: none;
 
 .header-list {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .header-item:not(:last-child) {
@@ -109,6 +106,8 @@ text-decoration: none;
 }
 
 .header-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -123,8 +122,6 @@ text-decoration: none;
 }
 .header-contact-list {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .header-item-contact:not(:last-child) {
     margin-right: 50px;
@@ -139,8 +136,7 @@ text-decoration: none;
 }
 .section-title-two {
     display: block;
-    padding-bottom: 50px;
-    margin: 0 auto;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -152,20 +148,19 @@ text-decoration: none;
 /*-----------Heroy--------------*/
 
 .section-heroy {
-     background-color: var(--section-color);
-     padding: 0;
+    background-color: var(--section-color);
+    padding: 200px 15px;
 }
 
 .heroy-container {
     margin: 0 auto;
-    padding: 200px 15px;
+
 }
 
 .heroy-title {
-    display: block;
     width: 696px;
-    padding-bottom: 30px;
     margin: 0 auto;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
@@ -224,7 +219,7 @@ text-decoration: none;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 0;
+    margin-bottom: 10px;;
 }
 
 .zest-p {
@@ -238,7 +233,6 @@ text-decoration: none;
 
 /*------------About--------------*/
 .about-container {
-    display: block;
     text-align: center;
     margin: 0 auto;
 }
@@ -264,9 +258,11 @@ margin-right: 30px;
 }
 
 .team-item:not(:last-child) {
-    background-color: var(--lite-text-color);
     width: 270px;
     margin-right: 30px;
+}
+.team-item {
+   background-color: var(--lite-text-color);
 }
 .team-name {
     padding-top: 30px;
@@ -306,15 +302,11 @@ margin-right: 30px;
   
 .portfolio-group {
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 810px;
-    padding-bottom: 34px;
-    margin: 0 auto;
-
+    margin-bottom: 50px;
 }
 .portfolio-item:not(:last-child) {
-    width: 370px;
-    display: block;
     margin-right: 8px;
 }
 .portfolio-bt {
@@ -329,6 +321,7 @@ margin-right: 30px;
     letter-spacing: 0.03em;
     background-color: var(--background-section);
     border: 0;
+    border-radius: 4px;
 }
 .portfolio-bt:hover,
 .portfolio-bt:focus {
@@ -346,7 +339,10 @@ margin-right: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     background-color: var(--accent-color);
-    color: var(--lite-text-color)
+    color: var(--lite-text-color);
+    border: 0;
+    border-radius: 4px;
+    
 }
 .portfolio-list {
     display: flex;
@@ -359,13 +355,13 @@ margin-right: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: var(--lite-text-color);
-    border-bottom-style: solid;
-    border-bottom-color: #EEEEEE;
-    border-bottom-width: 1px;
+
 }
 .signature {
-    width: 320px;
     padding: 20px 24px;
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .portfolio-title-two {
@@ -386,7 +382,11 @@ margin-right: 30px;
 /*-----------Footer-------------*/
 .footer {
     padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--section-color);
+}
+.address {
+    margin-top: 20px;
 }
 .footer-link-adress {
     font-style: normal;
@@ -412,11 +412,6 @@ margin-right: 30px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--lite-text-color);
-}
-.footer-list {
-    width: 231px;
-    padding-top: 20px;
-    padding-bottom: 60px;
 }
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
